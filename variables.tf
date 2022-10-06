@@ -13,12 +13,6 @@ variable "endpoint" {
 variable "user" {
   type = string
 }
-variable "cluuid" {
-  type = string
-}
-variable "netuuid" {
-  type = string
-}
 variable "k8sclu_name" {
   type = string
 }
