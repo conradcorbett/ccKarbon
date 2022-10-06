@@ -1,0 +1,8 @@
+cluster_name = "PHX-POC042"
+subnet_name  = "Primary"
+user         = "admin"
+password     = "nx2Tech254!"
+endpoint     = "10.42.42.40"
+cluuid       = "0005d9e3-c441-b3e0-6ddb-3cecef852de8"
+netuuid      = "3ffe1c8c-5360-4f94-868a-e2df7f68a488"
+k8sclu_name  = "cck8s1639002555"
