@@ -68,8 +68,12 @@ resource "nutanix_karbon_cluster" "k8scluster" {
       prism_element_cluster_uuid = data.nutanix_cluster.cluster.id
     }
   }
+
+  provisioner "local-exec" {
+    command = "export KUBECONFIG=$(pwd)/kubeconfig"
+  }
 }
-/*
+
 # Get kubeconfig based on the user input
 data "nutanix_karbon_cluster_kubeconfig" "configbyname" {
     karbon_cluster_name = nutanix_karbon_cluster.k8scluster.name
@@ -89,4 +93,3 @@ resource "local_file" "foo" {
     content  = data.template_file.kubeconfig.rendered
     filename = "${path.module}/kubeconfig"
 }
-*/
